@@ -1,0 +1,66 @@
+/* body {
+    background: ivory;
+}
+
+h1 {
+    color: crimson;
+}
+
+a:link {color: forestgreen; text-decoration:none;}
+a:visited {color: seagreen; text-decoration:none;}
+a:hover {text-decoration:none;color:yellowgreen;font-weight:bold;}
+a:active {color:red;text-decoration: none} */
+
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    font-family: Knockout, sans-serif; /* Using Knockout font */
+    color: #000; /* Setting black as primary text color */
+}
+
+/* Set background color */
+body {
+    background-color: #FFF; /* Setting white as background color */
+}
+
+/* Style the primary heading */
+h1 {
+    color: #000; /* Setting black as primary heading color */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Style links */
+a {
+    color: #6DCFF6; /* Setting blue as link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the image */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Style the navigation */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Set styles for paragraphs */
+p {
+    margin-bottom: 20px;
+}
