@@ -33,6 +33,14 @@ def prototypes():
 def prototype1():
     return render_template('./prototype_1.html')
 
+@app.route('/manufacturing')
+def manufacturing():
+    return render_template('./manufacturing.html')
+
+@app.route('/the_team')
+def the_team():
+    return render_template('./the_team.html')
+
 
 if __name__ == '__main__':
     app.debug = True

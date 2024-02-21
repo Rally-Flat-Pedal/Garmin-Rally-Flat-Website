@@ -1,19 +1,20 @@
+<!-- This file is a reference for the basic structure of the website -->
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
-    <h1>Welcome to Our Website</h1>
-    <img src="/static/images/P1_iso.jpg" alt="Homepage Image" width="400">
-
-    <h2>Explore Our Pages:</h2>
+    <h1>Welcome to the Homepage!</h1>
+    <img src="/static/P1_iso.jpg" alt="Image", width="400">
     <ul>
-        <li><a href="grip_tester.html">Grip Tester</a></li>
-        <li><a href="impact_testing.html">Impact Testing</a></li>
-        <li><a href="accuracy_testing.html">Accuracy Testing</a></li>
+        <li><a href="research">Research</a></li>
+        <li><a href="testing">Testing</a></li>
+        <li><a href="designs">Designs</a></li>
     </ul>
 </body>
 </html> -->
@@ -50,8 +51,6 @@
     </style>
 
 </head>
-
-
 <body>
     
     <header>
@@ -66,29 +65,30 @@
                     <li><a href="research">Research</a></li>
                     <li><a href="testing">Testing</a></li>
                     <li><a href="designs">Designs</a></li>
+                    <li><a href="manufacturing">Manufacturing</a></li> <!--Do we want to include this section?-->
+                    <div class="right">
+                        <li><a href="team", style="margin-left:auto;margin-right:0;">Meet the team</a></li>
+                    </div>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section>
-        <!-- This section is the top of the page, it will give a brief visual of all the different categories that follow on this page.
-            Each image will also be linked to it's respective section. -->
-        <a href="#grip_tester"><img src="/static/images/Modular pedal wide angle clear.png", style="width:200px"></a>
-        <a href="#impact_testing"><img src="/static/images/Modular pedal wide angle clear.png", style="width:200px"></a>
-        <a href="#accuracy_testing"><img src="/static/images/Modular pedal wide angle clear.png", style="width:200px"></a>
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <h2>Overview</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non eleifend libero. Sed ac lectus volutpat, dictum ipsum nec, aliquam sapien.</p>
+            <img src="/static/images/P1_iso.jpg" alt="Homepage Image" width="1500">
+            <!-- Add more content as needed -->
+        </div>
     </section>
 
+    <!-- Add more sections for Features, Specifications, Reviews, etc. -->
 
-    <section id="grip_tester" class="overview-section">
-        <h2>Grip Tester</h2>
-    </section>
-
-    <section id="impact_testing" class="overview-section">
-        <h2>Impact Testing</h2>
-    </section>
-
-    <section id="accuracy_testing" class="overview-section">
-        <h2>Accuracy Testing</h2>
-    </section>
+    <footer>
+        <div class="container">
+            <p>Garmin Rally Flat Pedal Capstone</p>
+        </div>
+    </footer>
+</body>
 </html>

@@ -3,32 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Prototype 1</title>
+    <link rel="stylesheet" type="text/css" href="/static/style2.css">
+    <style>
+        /* Additional CSS styles */
+        .header {
+            position: absolute;
+            left: 1;
+            top: 0;
+            margin-top: 30px;
+        }
+
+        .header img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: 10px; /* Add spacing around the image */
+            margin-left: 20px;
+            margin-right:0px;
+            margin-bottom: 0;
+            width: 100px; /* Set the width of the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+        
+    </style>
+
 </head>
 <body>
-    <h1>Welcome to the Homepage!</h1>
-    <img src="/static/P1_iso.jpg" alt="Image", width="400">
-    <ul>
-        <li><a href="research">Research</a></li>
-        <li><a href="testing">Testing</a></li>
-        <li><a href="designs">Designs</a></li>
-    </ul>
+    
+    <header>
+        <a href="../"><img src="/static/images/Capstone_logo.png", style="width:100px"></a>
+        <div class="container">
+            <div class="header">
+                <h1>Garmin Rally Flat Pedal Capstone</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="background">Background</a></li>
+                    <li><a href="research">Research</a></li>
+                    <li><a href="testing">Testing</a></li>
+                    <li><a href="designs">Designs</a></li>
+                    <li><a href="manufacturing">Manufacturing</a></li> <!--Do we want to include this section?-->
+                    <div class="right">
+                        <li><a href="the_team", style="margin-left:auto;margin-right:0;">Meet the team</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <h2>Overview</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non eleifend libero. Sed ac lectus volutpat, dictum ipsum nec, aliquam sapien.</p>
+            <img src="/static/images/P1_iso.jpg" alt="Homepage Image" width="1500">
+            <!-- Add more content as needed -->
+        </div>
+    </section>
+
+    <!-- Add more sections for Features, Specifications, Reviews, etc. -->
+
+    <footer>
+        <div class="container">
+            <p>Garmin Rally Flat Pedal Capstone</p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Image Example</title>
-</head>
-<body>
-    <h1>Image Example</h1>
-    <img src="/static/P1_iso.JPG" alt="Description of the image">
-</body>
-</html> -->
