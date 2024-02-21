@@ -13,6 +13,9 @@ def index(): # this function is called
 def get_image(image_name):
     return send_from_directory('images', image_name)
 
+@app.route('/background')
+def background():
+    return render_template('./background.html')
 
 @app.route('/research')
 def research():
