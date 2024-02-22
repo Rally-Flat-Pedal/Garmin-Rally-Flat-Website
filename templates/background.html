@@ -39,18 +39,22 @@
 <body>
     
     <header>
-        <a href="../"><img src="/static/images/Capstone_logo.png", style="width:100px"></a>
+        <a href="../"><img src="/static/images/Capstone_logo.png", style="width:150px;padding-bottom:30px;padding-top:10px;"></a>
         <div class="container">
-            <div class="header">
+            <!-- <div class="header">
                 <h1>Garmin Rally Flat Pedal Capstone</h1>
-            </div>
+            </div> -->
             <nav>
-                <ul>
-                    <li><a href="background">Background</a></li>
-                    <li><a href="research">Research</a></li>
-                    <li><a href="testing">Testing</a></li>
-                    <li><a href="designs">Designs</a></li>
-                </ul>
+                <div class="middle", >
+                    <ul>
+                        <li><a href="background", style="margin-left: 500px;">Background</a></li>
+                        <li><a href="research">Research</a></li>
+                        <li><a href="testing">Testing</a></li>
+                        <li><a href="designs">Designs</a></li>
+                        <li><a href="manufacturing">Manufacturing</a></li> <!--Do we want to include this section?-->
+                        <li><a href="the_team", style="margin-left:350px;text-align: right;">Meet the team</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -58,14 +62,17 @@
     <section>
         <!-- This section is the top of the page, it will give a brief visual of all the different categories that follow on this page.
             Each image will also be linked to it's respective section. -->
-        <a href="#current_product"><img src="/static/images/Modular pedal wide angle clear.png", style="width:200px"></a>
-        <a href="#problem"><img src="/static/images/Modular pedal wide angle clear.png", style="width:200px"></a>
-        <a href="#approach"><img src="/static/images/Modular pedal wide angle clear.png", style="width:200px"></a>
+        <a href="#current_product"><img src="/static/images/Modular pedal wide angle clear.png", style="width:300px"></a>
+        <a href="#problem"><img src="/static/images/Modular pedal wide angle clear.png", style="width:300px"></a>
+        <a href="#approach"><img src="/static/images/Modular pedal wide angle clear.png", style="width:300px"></a>
     </section>
 
 
     <section id="current_product" class="overview-section">
         <h2>The Current Product</h2>
+            {% for paragraph in paragraphs %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
     </section>
 
     <section id="problem" class="overview-section">
@@ -77,6 +84,9 @@
 
     <section id="approach" class="overview-section">
         <h2>The Approach</h2>
+            {% for paragraph in paragraphs %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
     </section>
 
     <footer>

@@ -13,19 +13,30 @@
             left: 1;
             top: 0;
             margin-top: 30px;
+            /* display: flex;
+            align-items: center; */
         }
 
         .header img {
             position: absolute;
             left: 0;
             top: 0;
-            margin-top: 10px; /* Add spacing around the image */
+            margin-top: 10px;  /* Add spacing around the image*/
             margin-left: 20px;
             margin-right:0px;
             margin-bottom: 0;
-            width: 100px; /* Set the width of the image */
-            height: auto; /* Maintain aspect ratio */
+            width: 100px; /*Set the width of the image*/
+            height: auto; /*Maintain aspect ratio*/
         }
+
+        /* .header h1{
+            margin-left: 10px;
+        } */
+
+        /* .container{
+            display:flex;
+            align-items:center;
+        } */
         
     </style>
 
@@ -33,28 +44,22 @@
 <body>
     
     <header>
-        <a href="../"><img src="/static/images/Capstone_logo.png", style="width:100px"></a>
+        <a href="../"><img src="/static/images/Capstone_logo.png", style="width:100px;padding-bottom:30px;padding-top:10px;"></a>
         <div class="container">
             <div class="header">
                 <h1>Garmin Rally Flat Pedal Capstone</h1>
             </div>
             <nav>
-                <!-- <ul> -->
-                    <div class="middle", >
-                        <ul>
-                            <li><a href="background">Background</a></li>
-                            <li><a href="research">Research</a></li>
-                            <li><a href="testing">Testing</a></li>
-                            <li><a href="designs">Designs</a></li>
-                            <li><a href="manufacturing">Manufacturing</a></li> <!--Do we want to include this section?-->
-                        </ul>
-                    </div>
-                    <div class="right">
-                        <ul>
-                            <li><a href="the_team", style="margin-left:auto;margin-right:0;">Meet the team</a></li>
-                        </ul>
-                    </div>
-                <!-- </ul> -->
+                <div class="middle", >
+                    <ul>
+                        <li><a href="background", style="margin-left: 500px;">Background</a></li>
+                        <li><a href="research">Research</a></li>
+                        <li><a href="testing">Testing</a></li>
+                        <li><a href="designs">Designs</a></li>
+                        <li><a href="manufacturing">Manufacturing</a></li> <!--Do we want to include this section?-->
+                        <li><a href="the_team", style="margin-left:350px;text-align: right;">Meet the team</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>

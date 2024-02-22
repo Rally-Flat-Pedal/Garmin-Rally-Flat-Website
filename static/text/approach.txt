@@ -1,0 +1,5 @@
+This section will go over our general approach of the project. For example:
+- Market research to determine what features are most important
+- Field testing to understand these features
+- Testing to quantify the qualitative data
+- Rapid prototyping to identify optimal dimensions of features
