@@ -15,7 +15,10 @@ def get_image(image_name):
 
 @app.route('/background')
 def background():
-    return render_template('./background.html')
+    with open('static/text/problem_statement.txt', 'r') as file:
+        content = file.read()
+    paragraphs = content.split('\n\n')
+    return render_template('./background.html', paragraphs=paragraphs)
 
 @app.route('/research')
 def research():

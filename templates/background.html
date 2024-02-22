@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototype 1</title>
+    <title>Background</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/Capstone_logo.png">
     <link rel="stylesheet" type="text/css" href="/static/style2.css">
     <style>
         /* Additional CSS styles */
@@ -24,6 +25,10 @@
             margin-bottom: 0;
             width: 100px; /* Set the width of the image */
             height: auto; /* Maintain aspect ratio */
+        }
+
+        .section {
+            font-family: Knockout, sans-serif;
         }
         
     </style>
@@ -65,9 +70,18 @@
 
     <section id="problem" class="overview-section">
         <h2>The Problem</h2>
+            {% for paragraph in paragraphs %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
     </section>
 
     <section id="approach" class="overview-section">
         <h2>The Approach</h2>
     </section>
+
+    <footer>
+        <div class="container">
+            <p>Garmin Rally Flat Pedal Capstone 2024</p>
+        </div>
+    </footer>
 </html>

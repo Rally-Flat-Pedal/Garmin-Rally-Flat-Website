@@ -23,11 +23,17 @@ header {
     background-color: #212121;
     color: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
     font-size: 28px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+section{
+    text-align: center;
 }
 
 nav ul {
@@ -35,7 +41,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
     margin-right: 20px;
 }
 
@@ -75,5 +82,21 @@ img {
 
 .right{
     text-align: right;
-    float: right;
+    margin-left: auto;
+}
+
+.middle{
+    text-align: middle;
+}
+
+.middle ul,
+.right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.middle li,
+.right li{
+    display: inline;
 }
