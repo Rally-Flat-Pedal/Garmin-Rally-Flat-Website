@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scrolling</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <h1>Atlas Pedal</h1>
+</header>
+
+<div class="container" id="content">
+    <!-- Infinite scrolling content will be dynamically added here -->
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 Atlas Pedal. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Function to check if the user has scrolled to the bottom
+        function isScrolledToBottom() {
+            return $(window).scrollTop() + $(window).height() >= $(document).height();
+        }
+
+        // Load more content when user scrolls to the bottom
+        $(window).scroll(function() {
+            if (isScrolledToBottom()) {
+                loadMoreContent();
+            }
+        });
+
+        // Function to load more content
+        function loadMoreContent() {
+            // Simulate loading of more content (replace with actual content loading logic)
+            setTimeout(function() {
+                $('#content').append('<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>');
+            }, 500); // Delay for demo purposes
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route('/') # when going to this route...
 def index(): # this function is called
-    return render_template('index.html')
+    return render_template('atlas.html')
 
-@app.route('/user/<name>')
-def user(name):
-    return render_template('user.html', the_name=name)
+# @app.route('/user/<name>')
+# def user(name):
+#     return render_template('user.html', the_name=name)
 
 if __name__ == '__main__':
     app.debug = True
